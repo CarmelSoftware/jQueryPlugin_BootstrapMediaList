@@ -1,0 +1,119 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bootstrap Media Objects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="Content/BootstrapMediaObjects.css">
+    <link href="Content/icomoon.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".my-navbar-collapse"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">CarmelSoft Bootstrap Media</a>
+            </div>
+            <nav id="navbar" class="navbar-collapse collapse my-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://github.com/CarmelSoftware">CarmelSoftware GitHub</a>
+                    </li>
+                    <li>
+                        <a href="http://themvcclub.blogspot.com">The MVC Club</a>
+                    </li>
+                    <li>
+                        <a href="http://www.getbootstrap.com">Get Bootstrap </a>
+                    </li>
+                    <li>
+                        <a href="http://www.jquery.com">Get jQuery</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">BootstrapjQueryPlugins</a></li>
+            <li class="active">Media</li>
+        </ol>
+        <div class="jumbotron">
+            <h1>jQuery Plugin Bootstrap Media Lists</h1>
+            <div class="well well-lg">
+                <p>This is an example of using the jQuery Plugin for Bootstrap Media Objects.  Media objects (including images, videos, audios)  are flexible and powerful components for displaying comment threads, articles lists, blog comments, Tweets, etc, that feature a left or right aligned image alongside textual content. </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container media-custom-list"></div>
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="Scripts/MediaList.js"></script>
+    <script src="Scripts/CSPluginMediaList.js"></script>
+    <script>
+        jQuery(function ($) {
+            console.time("timer");
+            console.group('Test');
+            console.log("%cInitializing Media List", "color:blue");
+
+
+            //   { data : MVCdata , url : "Scripts/MediaList.js" }
+            $(".media-custom-list").mediaList({ data: MVCdata }).hide().show(1000);
+
+            console.log("%cMedia List displayed", "color:green");
+            console.groupEnd('Test');
+            console.timeEnd("timer");
+        });
+    </script>
+    <script>
+
+        var MVCdata = [{ "Title": "MVC lives and Thoughts", "Url": "http://themvcclub.blogspot.com", "Image": "http://www.stockvault.net/data/2011/02/23/118137/small.jpg", "Text": "<br /><p>Our life is what our thoughts make it...</p>" }, { "Title": "Perspectives", "Url": "http://themvcclub.blogspot.com", "Image": "http://www.stockvault.net/data/2011/02/24/118148/small.jpg", "Text": "<br /><p>Everything we hear is an opinion, not a fact. </p><p>Everything we see is a perspective, not the truth...</p>" }, { "Title": "Love and Acceptance", "Url": "http://themvcclub.blogspot.com", "Image": "http://www.stockvault.net/data/2011/05/31/124348/small.jpg", "Text": "<br /><p>Accept the things to which fate binds you </p><p>And love the people with whom fate brings you together </p><p>But do so with all your heart...</p>" }, { "Title": "You Rule your Mind", "Url": "http://themvcclub.blogspot.com", "Image": "http://www.stockvault.net/data/2011/02/23/118137/small.jpg", "Text": "<br /><p>You have power over your mind , not outside events . </p><p>Realize this, and you will find strength...</p>" }];
+
+
+
+    </script>
+</body>
+</html>
