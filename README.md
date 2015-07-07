@@ -14,7 +14,7 @@ http://carmelsoft.blogspot.com/2015/06/jquery-plugin-bootstrap-media-list.html
 <img border="0" height="640" src="http://2.bp.blogspot.com/-9oVkakgtpoU/VYv7-qwPrJI/AAAAAAAALTM/AY24yAb2_ms/s640/1.bmp" width="594" />
 
 
-<img border="0" height="640" src="http://2.bp.blogspot.com/-Rp3Tt8ugxVk/VYv7_1SRJBI/AAAAAAAALTc/Y5XE8kku7zg/s640/4.bmp" width="374" />
+<img border="0" height="640" src="http://2.bp.blogspot.com/-Rp3Tt8ugxVk/VYv7_1SRJBI/AAAAAAAALTc/Y5XE8kku7zg/s640/4.bmp" width="374"     />
 
 
 <img border="0" height="516" src="http://2.bp.blogspot.com/-sbfvXdODEZw/VYv7-7eN1FI/AAAAAAAALTQ/81g8N3wa8mM/s640/2.bmp" width="640" />
